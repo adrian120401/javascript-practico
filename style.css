@@ -1,0 +1,14 @@
+body{
+    background-color:cornsilk;
+    display:flex;
+    flex-direction: column;
+}
+header h1{
+    text-decoration:underline;
+}
+section ul li a{
+    color:black;
+}
+section ul li a:hover{
+    color:aqua;
+}

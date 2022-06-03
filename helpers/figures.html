@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras geometricas</h1>
+    </header>
+    <section>
+        <h3>
+            Calcula área y perimetro de un cuadrado 
+        </h3>
+        <form action="">
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado:
+                <input type="number" step="0.01" id="inputCuadrado">
+            </label>   
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+            <p id="newPerimetro"></p>
+            <p id="newArea"></p>
+        </form>
+    </section>
+    <section>
+        <h3>
+            Calcula área y perimetro de un triangulo
+        </h3>
+        <form action="">
+            <label for="inputTrianguloUno">
+                Escribe cuanto mide el primer lado de tu traingulo:
+                <input type="number" step="0.01" id="inputTrianguloUno">
+            </label>
+            <label for="inputTrianguloDos">
+                El segundo lado de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloDos">
+            </label>
+            <label for="inputTrianguloBase">
+                La base de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloBase">
+            </label>
+
+            <label for="inputTrianguloAltura">
+                La altura de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloAltura">
+            </label>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+
+                <p id="newPerimetroTriangulo"></p>
+                <p id="newAreaTriangulo"></p>
+        </form>
+    </section>
+    <section>
+        <h3>
+            Calcula área de un triangulo iscoceles
+        </h3>
+        <form action="">
+            <label for="inputTrianguloIscoceles">
+                Escribe cuanto miden los lados de tu triangulo iscoceles:
+                <p>Recuerda que el lado diferente es la base ;)</p>
+                El primer lado de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloIscoceles">
+            </label>
+            <label for="inputTrianguloIscocelesDos">
+                El segundo lado de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloIscocelesDos">
+            </label>
+            <label for="inputTrianguloIscocelesBase">
+                La base de tu triangulo:
+                <input type="number" step="0.01" id="inputTrianguloIscocelesBase">
+            </label>
+            <button type="button" onclick="calcularAreaTrianguloIsosceles()">Calcular el área</button>
+            <p id="newAreaTrianguloIsosceles"></p>
+        </form>
+    </section>
+
+    <section>
+        <h3>
+            Calcula área y perimetro de un circulo 
+        </h3>
+        <form action="">
+            <label for="inputCicrulo">
+                Escribe cuanto mide el radio del circulo:
+                <input type="number" step="0.01" id="inputCicrulo">
+            </label>   
+            <button type="button" onclick="calcularDiametroCirculo()">Calcular el diametro</button>
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+            <p id="newDiametroCirculo"></p>
+            <p id="newPerimetroCirculo"></p>
+            <p id="newAreaCirculo"></p>
+        </form>
+    </section>
+
+
+
+    <script src="./figures.js"></script>
+</body>
+</html>
